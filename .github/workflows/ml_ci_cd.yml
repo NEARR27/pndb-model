@@ -20,9 +20,9 @@ jobs:
       run: pip install -r requirements.txt
 # DESCARGA DATASET
     - name: download dataset
-      run: wget -O data/heart_disease.csv ${{github.event.client_payload.dataseturl}}
+      run: wget -O data/pndb.csv ${{github.event.client_payload.dataseturl}}
     - name: cat dataset
-      run: cat data/heart_disease.csv
+      run: cat data/pndb.csv
  #EJECUTA EL MODELO 
     - name: train model
       run: python model/train.py
