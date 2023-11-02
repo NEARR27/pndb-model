@@ -20,7 +20,7 @@ print('Training model...')
 clf = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=42)
 clf.fit(X_train, y_train)
 
-# Evaluamos el modelo en el conjunto de prueba (esto es opcional pero es una buena práctica)
+# Evaluamos el modelo en el conjunto de prueba 
 y_pred = clf.predict(X_test)
 print(classification_report(y_test, y_pred))
 
