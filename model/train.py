@@ -36,7 +36,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy * 100:.2f}%")
 
 print('Saving model...')
-dump(clf, pathlib.Path('model/pndm-prediction-v2.joblib'))
+dump(clf, pathlib.Path('model/pndm-prediction-v.joblib'))
 
 print(y.value_counts())
 

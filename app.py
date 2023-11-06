@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Carga el modelo
-model_path = 'model/pndm-prediction-v2.joblib'
+model_path = 'model/pndm-prediction-v.joblib'
 model = load(model_path)
 
 # Modelo de entrada
