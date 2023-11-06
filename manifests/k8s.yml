@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapipnd22-deployment
+  name: fastapipnd-deployment
 spec:
   selector:
     matchLabels:
-      app: fastapipnd22-server
+      app: fastapipnd-server
   replicas: 1
   template:
     metadata:
       labels:
-        app: fastapipnd22-server
+        app: fastapipnd-server
     spec:
       containers:
-      - name: fastapipnd22
+      - name: fastapipnd
         #image: gcr.io/tensorflow-serving/resnet 
-        image: docker.io/rustcohle27/pndbfastapi:latest
+        image: docker.io/rustcohle27/fastpndbapi:latest
         ports:
         - containerPort: 80
 ---
@@ -24,12 +24,12 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    run: fastapipnd22-service
-  name: fastapipnd22-service
+    run: fastapipnd-service
+  name: fastapipnd-service
 spec:
   ports:
   - port: 80
     targetPort: 80
   selector:
-    app: fastapipnd22-server
+    app: fastapipnd-server
   type: LoadBalancer

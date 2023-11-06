@@ -24,7 +24,7 @@ smote = SMOTE(random_state=0)
 X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
 
 print('Training model...')
-clf = RandomForestClassifier(n_estimators=10000, max_depth=100, random_state=42)
+clf = RandomForestClassifier(n_estimators=1000, max_depth=10, random_state=42)
 clf.fit(X_train_smote, y_train_smote)
 
 # Evaluamos el modelo en el conjunto de prueba 
