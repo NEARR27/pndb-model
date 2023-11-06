@@ -12,13 +12,13 @@ def get_prediction(data):
 
 if __name__ == "__main__":
     sample_data = {
-        "Age": 3,
-        "HbA1c": 5.69,
-        "Genetic_Info": 1,
-        "Family_History": 0,
-        "Birth_Weight": 2.06,
-        "Developmental_Delay": 0,
-        "Insulin_Level": 3.14
+        "Age": 1,                
+        "HbA1c": 20,              
+        "Genetic_Info": 1,       
+        "Family_History": 1,     
+        "Birth_Weight": 1.5,     
+        "Developmental_Delay": 1, 
+        "Insulin_Level": 15 
     }
 
     prediction = get_prediction(sample_data)

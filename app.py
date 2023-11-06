@@ -21,13 +21,13 @@ model = load(model_path)
 
 # Modelo de entrada
 class InputData(BaseModel):
-    Age: float = 3
-    HbA1c: float = 5.69
+    Age: float = 2
+    HbA1c: float = 5.694742027
     Genetic_Info: int = 1
-    Family_History: int = 0
-    Birth_Weight: float = 2.06
+    Family_History: int = 1
+    Birth_Weight: float = 2.05934178
     Developmental_Delay: int = 0
-    Insulin_Level: float = 3.14
+    Insulin_Level: float = 7.141359469
 
 # Modelo de salida
 class OutputData(BaseModel):

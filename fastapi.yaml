@@ -16,7 +16,7 @@ spec:
       containers:
       - name: pndb-model-nearr27-container
         #image: gcr.io/tensorflow-serving/resnet 
-        image: docker.io/rustcohle27/fastapipndb22:latest
+        image: docker.io/rustcohle27/pndbfastapi:latest
         ports:
         - containerPort: 80
 ---
